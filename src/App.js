@@ -4,7 +4,7 @@ import logo from "./logo.svg";
 import "./App.css";
 
 export type Props = {
-  message?: string,
+  message: string,
   name: string,
   age: number
 };
@@ -16,7 +16,9 @@ export const App = (props: Props) => (
       <h1 className="App-title">Welcome to React</h1>
     </header>
     <p className="App-intro">
-      {props.message} {props.name} {props.age}
+      {props.chuff}
+      {props.message}
+      {props.age}
     </p>
   </div>
 );
